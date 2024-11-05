@@ -10,8 +10,9 @@ export const usingContext=()=>{
 
 const ContextHook=({children})=>{
     const [data,setData]=useState("shyam");
+    const setup="context setting";
    return (
-     <Context.Provider value={{data,setData}}>
+     <Context.Provider value={{data,setData,setup}}>
         {children}
      </Context.Provider>
    )
